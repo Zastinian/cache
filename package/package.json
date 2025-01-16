@@ -1,0 +1,37 @@
+{
+  "name": "@hedystia/cache",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zastinian/cache.git"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "devDependencies": {
+    "@types/bun": "^1.1.14",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./package.json": "./package.json"
+  },
+  "bugs": {
+    "url": "https://github.com/Zastinian/cache/issues"
+  },
+  "files": ["dist"],
+  "homepage": "https://docs.hedystia.com/cache/start",
+  "keywords": ["cache", "typescript", "javascript", "node", "bun"],
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup"
+  },
+  "type": "commonjs",
+  "types": "./dist/index.d.ts"
+}
